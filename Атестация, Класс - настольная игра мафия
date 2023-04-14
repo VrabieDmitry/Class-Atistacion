@@ -1,0 +1,52 @@
+class maf(object):
+    __private__Rules ="Игроки либо решают, кто из них мафия, либо мафия — закрытая карта. Затем, если они голосуют за закрытую карту, и если та честная — мафия выиграла, а если мафия — мафия проиграла. Либо один из игроков убеждает другого, что он сам честный, а другой — мафия и открывает закрытую карту. Если она мафиозная — мафия выиграла"
+    __private__Character ="Роли в игре:Путана, Шериф, Доктор, Мирный житель, Мафия "
+    __private__character_information ="Доктор - спасает ночью игрока от убийства мафией, Мафия-убивает других игроков, Шериф- узнает принадлежность игрока к мафии, Мирный житель - голосует и пытается вычеслить мафию,Путана - не позволет игроку голосовать "
+    __private__type ="Тип: Настольная"
+    __private__Number_of_players ="Колличество игроков: от 6 до 14"
+    __private__the_target_audience ="Целевая аудитори: Для всех возрастов"
+    __private__game_time ="Время игры: от 30 до 60 минут"
+    
+    def  __init__(sefl, now_count):
+        sefl.__private__now_count=now_count
+    def get_now_count(sefl):
+        print("Колличество игроков",sefl.__private__now_count)
+    def get_Rules(sefl):
+        print(sefl.__private__Rules)
+    def get_Character(sefl):
+        print(sefl.__private__Character)
+    def get_character_information(sefl):
+        print(sefl.__private__character_information)
+    def get_type(sefl):
+        print(sefl.__private__type)
+    def get_Number_of_players(sefl):
+        print(sefl.__private__Number_of_players)
+    def get_the_target_audience(sefl):
+        print(sefl.__private__the_target_audience)
+    def get_game_time(sefl):
+        print(sefl.__private__game_time)
+        
+    def end(sefl):
+         print("конец")
+         
+    def start(sefl):
+        print("Игра началась")
+        print("Ты берешь карту")
+        print("Ты мирный  житель")
+        print("город засыпает") 
+        print("просыпается мафия")
+        print("Город просыпается")
+        print("Вы были убиты ночью")
+        sefl.end()
+
+        
+a = maf(7)    
+a.get_Rules()
+a.get_Character()
+a.get_character_information()
+a.get_type()
+a.get_Number_of_players()
+a.get_the_target_audience()
+a.get_game_time()
+a.get_now_count()
+a.start()
